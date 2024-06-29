@@ -1,4 +1,13 @@
-## Installation
+# Requirements
+
+  1. YOLOv5 download: https://github.com/ultralytics/yolov5
+  2. pytorch
+  3. opencv
+
+
+
+
+# Installation
 
 
   ```
@@ -37,7 +46,7 @@
 
 
 
-## Launch
+# Launch
 
   ```
   ros2 run yolo_detection yolo_detector
