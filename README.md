@@ -3,7 +3,11 @@
   1. YOLOv5 download: https://github.com/ultralytics/yolov5
   2. pytorch
   3. opencv
-
+  4. v4l2_camera
+    ```
+    sudo apt update
+    sudo apt install ros-${ROS_DISTRO}-v4l2-camera
+    ```
 
 
 
