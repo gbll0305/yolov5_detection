@@ -4,10 +4,11 @@
   2. pytorch
   3. opencv
   4. v4l2_camera
-    ```
-    sudo apt update
-    sudo apt install ros-${ROS_DISTRO}-v4l2-camera
-    ```
+
+      ```
+      sudo apt update
+      sudo apt install ros-${ROS_DISTRO}-v4l2-camera
+      ```
 
 
 
