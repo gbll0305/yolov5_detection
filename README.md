@@ -9,6 +9,13 @@
       sudo apt update
       sudo apt install ros-${ROS_DISTRO}-v4l2-camera
       ```
+  5. (선택사항) v4l2-ctl: change v4l2_camera settings
+      ```
+      sudo apt install v4l-utils
+      
+      v4l2-ctl -d /dev/video0 --list-formats-ex   # camera formets 확인
+      v4l2-ctl -d /dev/video0 --set-fmt-video=width=640,height=480   # change settings
+      ```
 
 
 
