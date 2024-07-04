@@ -14,8 +14,8 @@ class YoloDetector(Node):
     def __init__(self):
         super().__init__('yolo_detector')
         
-        # define model path and load the model
-        self.declare_parameter('model_path', '/home/bulnabi/yolov5_ws/best.pt')
+        # define model path and load the model (ex: /home/chaewon/yolov5/best.pt)
+        self.declare_parameter('model_path', '/home/chaewon/yolov5/best.pt')
         model_path = self.get_parameter('model_path').get_parameter_value().string_value
         self.model = torch.hub.load('ultralytics/yolov5', 'custom', path=model_path, force_reload=True)
         
@@ -27,7 +27,7 @@ class YoloDetector(Node):
         self.bridge = CvBridge()
         
         # create target_capture folder, which is used to save target images
-        self.target_capture_folder = '/home/bulnabi/yolov5_ws/target_capture'
+        self.target_capture_folder = '/home/chaewon/workspace_ros/target_capture'
         os.makedirs(self.target_capture_folder, exist_ok=True)
         
         # timer for publishing target image
