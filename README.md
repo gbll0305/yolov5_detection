@@ -63,7 +63,7 @@
 # Launch
 
   ```
-  # run each node nodes saperately
+  # run each nodes saperately
   ros2 run v4l2_camera v4l2_camera_node
   ros2 run yolo_detection yolo_detector
   
