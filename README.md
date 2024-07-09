@@ -17,7 +17,8 @@
       v4l2-ctl -d /dev/video0 --set-fmt-video=width=640,height=480   # change settings
       ```
 
-
+<br/>
+<br/>
 
 # Installation
 
@@ -57,7 +58,8 @@
   source ./install/local_setup.bash
   ```
 
-
+<br/>
+<br/>
 
 
 # Launch
@@ -71,6 +73,8 @@
   ros2 run yolo_detection yolo_detedtor.launch.py
   ```
 
+<br/>
+<br/>
 
 
 # Camera settings
